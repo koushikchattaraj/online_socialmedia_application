@@ -615,13 +615,13 @@ class tinder:
 
 
     def destory(self):
-        for i in self.root.grid_slaves():
+        for i in self.root.grid_subordinates():
             i.destroy()
 
         Label(text="Wellcome to Tinder", bg="Orange").grid(row=0, column=0)
 
     def destroybtn(self):
-        for i in self.showprofilebtn.grid_slaves():
+        for i in self.showprofilebtn.grid_subordinates():
             i.destroy()
 
 
